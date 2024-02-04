@@ -1,0 +1,29 @@
+@tailwind components;
+
+@layer components {
+    .page-header-style {
+        @apply flex items-center justify-between border-b border-insight-300 mt-4 pb-6 gap-4;
+    }
+
+    .title-page-style {
+        @apply w-full flex items-center justify-start text-lg text-insight-500 font-bold gap-4 ml-auto;
+    }
+
+    .new-link-page {
+        @apply rounded-lg flex items-center justify-center gap-4 px-4 py-2 text-base text-white bg-blue-600 w-fit hover:bg-blue-800 disabled:bg-blue-300;
+    }
+}
+
+@layer components {
+    .search-in-table {
+        @apply flex w-full flex-wrap gap-4 items-center justify-start mt-4;
+    }
+
+    .search-in-table > p {
+        @apply text-base font-medium text-insight-500 min-w-40;
+    }
+
+    .search-in-table > input {
+        @apply bg-white px-4 py-3 rounded-md min-w-72 outline-none border-none text-black shadow-md;
+    }
+}
